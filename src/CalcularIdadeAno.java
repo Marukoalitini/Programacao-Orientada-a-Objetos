@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class calcular_idade_ano {
+public class CalcularIdadeAno {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite o ano em que você nasceu :");

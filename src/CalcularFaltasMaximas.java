@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class calcular_faltas_maximas {
+public class CalcularFaltasMaximas {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Insira a quantidade de aulas de PO totais do semestre: ");
