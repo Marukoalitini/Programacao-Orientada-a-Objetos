@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Atividade1 {
+public class Main {
     public static int[] retornarListaAleatoria(int tamanho){
         int[] lista = new int[tamanho];
         Random gerador = new Random();

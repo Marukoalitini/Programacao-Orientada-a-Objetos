@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class calcular_idade_meses {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Insira sua Idade");
