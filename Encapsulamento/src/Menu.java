@@ -21,37 +21,37 @@ public class Menu {
                     System.out.println("Cadastro");
                     System.out.println("Digite o nome: ");
                     String nome = scanner.nextLine();
-                    while (!StringUtils.validarInput(nome, "^[A-Za-z\\s]+$")) {
+                    while (StringUtils.validarInput(nome, "^[A-Za-z\\s]+$")) {
                         System.out.println("Nome inválido. Digite novamente: ");
                         nome = scanner.nextLine();
                     }
                     System.out.println("Digite o cpf: ");
                     String cpf = scanner.nextLine();
-                    while (!StringUtils.validarInput(cpf, "^\\d{11}$")) {
+                    while (StringUtils.validarInput(cpf, "^\\d{11}$")) {
                         System.out.println("CPF inválido. Digite novamente: ");
                         cpf = scanner.nextLine();
                     }
                     System.out.println("Digite o endereço: ");
                     String endereco = scanner.nextLine();
-                    while (!StringUtils.validarInput(endereco, "^[A-Za-z0-9\\s,]+$")) {
+                    while (StringUtils.validarInput(endereco, "^[A-Za-z0-9\\s,]+$")) {
                         System.out.println("Endereço inválido. Digite novamente: ");
                         endereco = scanner.nextLine();
                     }
                     System.out.println("Digite o telefone: ");
                     String telefone = scanner.nextLine();
-                    while (!StringUtils.validarInput(telefone, "^\\d{10,11}$")) {
+                    while (StringUtils.validarInput(telefone, "^\\d{10,11}$")) {
                         System.out.println("Telefone inválido. Digite novamente: ");
                         telefone = scanner.nextLine();
                     }
                     System.out.println("Digite o email: ");
                     String email = scanner.nextLine();
-                    while (!StringUtils.validarInput(email, "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$")) {
+                    while (StringUtils.validarInput(email, "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$")) {
                         System.out.println("Email inválido. Digite novamente: ");
                         email = scanner.nextLine();
                     }
                     System.out.println("Digite a senha: ");
                     String senha = scanner.nextLine();
-                    while (!StringUtils.validarInput(senha, "^[A-Za-z0-9@#$%^&+=]{6,}$")) {
+                    while (StringUtils.validarInput(senha, "^[A-Za-z0-9@#$%^&+=]{6,}$")) {
                         System.out.println("Senha inválida. Digite novamente: ");
                         senha = scanner.nextLine();
                     }
@@ -120,37 +120,37 @@ public class Menu {
                     }
                     System.out.println("Digite o nome: ");
                     String nomeAlterar = scanner.nextLine();
-                    while (!StringUtils.validarInput(nomeAlterar, "^[A-Za-z\\s]+$")) {
+                    while (StringUtils.validarInput(nomeAlterar, "^[A-Za-z\\s]+$")) {
                         System.out.println("Nome inválido. Digite novamente: ");
                         nomeAlterar = scanner.nextLine();
                     }
                     System.out.println("Digite o cpf: ");
                     String cpfAlterar = scanner.nextLine();
-                    while (!StringUtils.validarInput(cpfAlterar, "^\\d{11}$")) {
+                    while (StringUtils.validarInput(cpfAlterar, "^\\d{11}$")) {
                         System.out.println("CPF inválido. Digite novamente: ");
                         cpfAlterar = scanner.nextLine();
                     }
                     System.out.println("Digite o endereço: ");
                     String enderecoAlterar = scanner.nextLine();
-                    while (!StringUtils.validarInput(enderecoAlterar, "^[A-Za-z0-9\\s,]+$")) {
+                    while (StringUtils.validarInput(enderecoAlterar, "^[A-Za-z0-9\\s,]+$")) {
                         System.out.println("Endereço inválido. Digite novamente: ");
                         enderecoAlterar = scanner.nextLine();
                     }
                     System.out.println("Digite o telefone: ");
                     String telefoneAlterar = scanner.nextLine();
-                    while (!StringUtils.validarInput(telefoneAlterar, "^\\d{10,11}$")) {
+                    while (StringUtils.validarInput(telefoneAlterar, "^\\d{10,11}$")) {
                         System.out.println("Telefone inválido. Digite novamente: ");
                         telefoneAlterar = scanner.nextLine();
                     }
                     System.out.println("Digite o email: ");
                     String emailAlterar = scanner.nextLine();
-                    while (!StringUtils.validarInput(emailAlterar, "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$")) {
+                    while (StringUtils.validarInput(emailAlterar, "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$")) {
                         System.out.println("Email inválido. Digite novamente: ");
                         emailAlterar = scanner.nextLine();
                     }
                     System.out.println("Digite a senha: ");
                     String senhaAlterar = scanner.nextLine();
-                    while (!StringUtils.validarInput(senhaAlterar, "^[A-Za-z0-9@#$%^&+=]{6,}$")) {
+                    while (StringUtils.validarInput(senhaAlterar, "^[A-Za-z0-9@#$%^&+=]{6,}$")) {
                         System.out.println("Senha inválida. Digite novamente: ");
                         senhaAlterar = scanner.nextLine();
                     }

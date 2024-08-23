@@ -15,6 +15,6 @@ public class StringUtils {
         public static boolean validarInput(String input, String regex) {
             Pattern pattern = Pattern.compile(regex);
             Matcher matcher = pattern.matcher(input);
-            return matcher.matches();
+            return !matcher.matches();
     }
 }
