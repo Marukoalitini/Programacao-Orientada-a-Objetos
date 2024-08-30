@@ -13,11 +13,11 @@ public class ContaBancaria {
     public double getSaldo() {
         return saldo;
     }
-    public void deposito(double saldo) {
-        this.saldo += saldo;
+    public void deposito(double deposito) {
+        this.saldo += deposito;
     }
-    public void sacar(double saldo) {
-        this.saldo -= saldo;
+    public void sacar(double saque) {
+        this.saldo -= saque;
     }
 
 }

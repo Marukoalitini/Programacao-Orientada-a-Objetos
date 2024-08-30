@@ -56,9 +56,8 @@ public class Menu {
                         senha = scanner.nextLine();
                     }
                     int id = banco.getProximoIdCliente();
-                    Cliente cliente = new Cliente(nome, cpf, endereco, telefone, email, senha, id);
-                    ContaBancaria conta = new ContaBancaria(id);
-                    banco.cadastrarCliente(cliente, conta);
+
+                    banco.cadastrarCliente(new Cliente(nome, cpf, endereco, telefone, email, senha, id), new ContaBancaria(id));
 
                     System.out.println("Cliente cadastrado com sucesso");
                     break;
@@ -95,8 +94,11 @@ public class Menu {
                         System.out.println("Quantia de dinheiro inválida");
                         break;
                     }
-                    contaSacar.sacar(quantiaSacar);
-                    System.out.println("Saque concluído com sucesso, novo Saldo = " + contaSacar.getSaldo());
+                    else if(contaSacar.getSaldo() >= quantiaSacar){
+                        System.out.println("Saque concluído com sucesso, novo Saldo = "+ contaSacar.getSaldo());
+                        break;
+                    }
+                    System.out.println("Saldo insuficiente");
                     break;
                 case 4:
                     System.out.println("Ver Saldo");
@@ -165,6 +167,7 @@ public class Menu {
                 case 6:
                     System.out.println("Consultar Ids:");
                     banco.getClientesNames();
+                    break;
                 case 7:
                     System.out.println("Sair");
                     return;

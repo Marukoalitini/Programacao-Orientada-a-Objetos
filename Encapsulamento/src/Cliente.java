@@ -7,6 +7,7 @@ public class Cliente {
     private String senha;
     private final int id;
 
+
     public Cliente(String nome, String cpf, String endereco, String telefone, String email, String senha, int id){
         this.nome = StringUtils.capitalizeFirstLetter(nome);
         this.cpf = cpf;
@@ -15,6 +16,8 @@ public class Cliente {
         this.email = email.toLowerCase();
         this.senha = senha;
         this.id = id;
+
+
     }
 
 

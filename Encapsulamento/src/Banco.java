@@ -1,9 +1,8 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class Banco {
-    private final List<Cliente> clientes = new ArrayList<Cliente>();
-    private final List<ContaBancaria> contas = new ArrayList<ContaBancaria>();
+    private final ArrayList<Cliente> clientes = new ArrayList<>();
+    private final ArrayList<ContaBancaria> contas = new ArrayList<>();
     public void cadastrarCliente(Cliente cliente, ContaBancaria conta){
         clientes.add(cliente);
         contas.add(conta);
